@@ -31,6 +31,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #simple-form
 gem 'simple_form', '~> 3.2'
 
+#paperclip
+gem 'paperclip', '~> 4.3', '>= 4.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
