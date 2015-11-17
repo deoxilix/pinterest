@@ -1,4 +1,7 @@
 -# = link_to "New Pin", new_pin_path
+#pins.transitions-enabled
 - @pins.each do |pin|
-  = link_to (image_tag pin.image.url(:medium)), pin
-  %h2= link_to pin.title, pin
+  -# .box.panel.panel-default
+  .box.img.panel.panel-body
+    = link_to (image_tag pin.image.url(:medium)), pin
+    %h2= link_to pin.title, pin
