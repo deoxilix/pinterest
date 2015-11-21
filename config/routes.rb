@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  resources :pins
+  resources :pins do
+    member do
+      put "like", to: "pins#upvote"
+      #See how all the routes layout with 'rake routes'
+    end
+  end
 
   root "pins#index"
 
